@@ -1,5 +1,23 @@
 # 不定自然変換理論に基づく比喩理解モデル：<br>シミュレーションプログラム
 ## コードの概要
+### pythonのバージョン
+- Python 3.7.7
+### ライブラリ
+#### デフォルトのライブラリ
+- random
+- pprint
+- math
+- sys
+#### インストールが必要なライブラリ
+- numpy 1.18.1
+- scipy 1.4.1
+- pandas 1.0.3
+- networkX 2.4
+- tqdm   4.46.0
+- matplot 3.1.3
+- pygraphviz 1.3
+- seaborn 0.10.1
+
 ### データ
 - three_metaphor_data/three_metaphor_images.csv
     - 「蝶は踊り子のようだ」、「粉雪は羽毛のようだ」、「笑顔は花のようだ」の喩辞、被喩辞から連想したイメージ(それぞれ8個)のデータ
