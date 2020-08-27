@@ -5,7 +5,7 @@
     - 「蝶は踊り子のようだ」、「粉雪は羽毛のようだ」、「笑顔は花のようだ」の喩辞、被喩辞から連想したイメージ(それぞれ8個)のデータ
 - three_metaphor_data/three_metaphor_assoc_data.csv
     - 「蝶は踊り子のようだ」、「粉雪は羽毛のようだ」、「笑顔は花のようだ」の全てのイメージ間の連想データ
-- human_correspondence/human_correspondence.csv
+- simulations/human_correspondence/human_correspondence.csv
     - 「蝶は踊り子のようだ」に関して実験を行った結果の人間の比喩の解釈となるデータ
 
 ### プログラム
