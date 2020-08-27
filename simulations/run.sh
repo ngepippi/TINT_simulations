@@ -1,0 +1,3 @@
+python object_established_coslice_simulator.py
+python tri_established_coslice_simulator.py
+python analysis.py
