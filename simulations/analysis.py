@@ -387,10 +387,10 @@ def over_less_tri_and_object_assoc_prob_th(r_function=pearsonr):
 
 if __name__ == "__main__":
     # 連想確率、TINTのシミュレーション結果(対象同士、三角構造同士)、人間の比喩解釈データをヒートマップで出力する
-    # adj_matrix("蝶","踊り子")
-    # object_TINT_edge_correspondence_heatmap("蝶","踊り子")
-    # tri_TINT_edge_correspondence_heatmap("蝶","踊り子","踊り","女性")
-    # human_correspondence_heatmap("蝶","踊り子")
+    adj_matrix("蝶","踊り子")
+    object_TINT_edge_correspondence_heatmap("蝶","踊り子")
+    tri_TINT_edge_correspondence_heatmap("蝶","踊り子","踊り","女性")
+    human_correspondence_heatmap("蝶","踊り子")
 
     # TINTのシミュレーション結果(対象同士、三角構造同士)と実験で取得した人間の比喩の解釈のデータとの相関係数を計算する
     r_function = spearmanr
