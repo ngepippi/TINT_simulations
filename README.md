@@ -50,6 +50,12 @@
     - 対象同士の人間、三角構造同士と人間の相関係数の比較
 
 ## 論文再現の手順
+注：
+論文中に結果としてのせた対象同士のシミュレーションを行った際のシード値を紛失してしまったためこのシミュレーションを行っても論文の表の値などとは完全に一致しない。
+しかし、シード値を変えて実行しても対象同士のシミュレーションでは夜についての相関1つが有意になる場合がある程度である。<br>
+また、シード値によってシミュレーションに用いているランダム値
+が変化し、対応づけの結果が変化することで、相関係数の変動があるため、表4,5の三角構造の数に変化はあるものの、重要な対象同士を超えている三角構造の射には0.75以上のものがどのくらいあるかという表6,7についてはあまり変化がない。
+
 1. ### シミュレーションの実行
     - 対象同士のシミュレーションを行うためにobject_established_coslice_simulator.pyを実行する。(この結果はobject_edge_correspondenceに格納される)
     - 三角構造同士のシミュレーションを行うためにtri_established_coslice_simulator.pyを実行する。(この結果はtri_edge_correspondenceに格納される)
@@ -63,8 +69,8 @@
 
 3. ### 相関係数の計算
     - analysis.pyのmain関数の中段のブロックを実行する(結果は/correfに格納される)
-    - 人間と対象同士の対応づけを行うTINTの相関係数を計算する：<br>human_tri_data_correlation_to_csv
-    - 人間と三角構造同士の対応づけを行うTINTの相関係数を計算する<br>    human_object_data_correlation_to_csv
+    - 人間と対象同士の対応づけを行うTINTの相関係数を計算する(計算の際に用いたシード値を指定)：<br>human_tri_data_correlation_to_csv
+    - 人間と三角構造同士の対応づけを行うTINTの相関係数を計算する(計算の際に用いたシード値を指定<br>    human_object_data_correlation_to_csv
 
 4. ### 対象同士と三角構造同士の相関係数の比較
     - analysis.pyのmain関数の下段のブロックを実行する(標準出力に表示される)：<br> object_correlation_analysis_over_th
